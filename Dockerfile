@@ -9,7 +9,7 @@ MAINTAINER Rona Chong <ronachong@gmail.com>
 
 # setup all the configfiles
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
-COPY /home/rona/projects/moshimoji-nginx/nginx-default.conf /etc/nginx/conf.d/default.conf
+COPY /home/rona/projects/moshimoji-nginx/default.conf /etc/nginx/conf.d/default.conf
 
 # add code - TODO: change this to only media/static dirs
 COPY /home/rona/projects/moshimoji-backend/ /home/docker/code/
